@@ -18,6 +18,9 @@
 		127A22E61DF142980002EF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127A22E41DF142980002EF34 /* LaunchScreen.storyboard */; };
 		127A22EE1DF146D90002EF34 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127A22ED1DF146D90002EF34 /* HelloViewController.swift */; };
 		1288ECDB1DF944AF00149DCE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1288ECDA1DF944AF00149DCE /* ProfileViewController.swift */; };
+		128E35AB1E03BC8B00F8021F /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E35AA1E03BC8B00F8021F /* ContactDetailsViewController.swift */; };
+		128E35AD1E03BD5900F8021F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E35AC1E03BD5900F8021F /* User.swift */; };
+		128E35B11E03BE2900F8021F /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E35B01E03BE2900F8021F /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		127A22E71DF142980002EF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127A22ED1DF146D90002EF34 /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		1288ECDA1DF944AF00149DCE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		128E35AA1E03BC8B00F8021F /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		128E35AC1E03BD5900F8021F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		128E35B01E03BE2900F8021F /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +72,39 @@
 		127A22DA1DF142980002EF34 /* iOS-2 */ = {
 			isa = PBXGroup;
 			children = (
+				128E35AE1E03BDDE00F8021F /* Controllers */,
 				127A22DB1DF142980002EF34 /* AppDelegate.swift */,
 				127A22DF1DF142980002EF34 /* Main.storyboard */,
 				127A22E21DF142980002EF34 /* Assets.xcassets */,
 				127A22E41DF142980002EF34 /* LaunchScreen.storyboard */,
 				127A22E71DF142980002EF34 /* Info.plist */,
+				121419B81E0288CC00633151 /* ContactsTableViewCell.swift */,
+				128E35AF1E03BE0200F8021F /* Models */,
+			);
+			path = "iOS-2";
+			sourceTree = "<group>";
+		};
+		128E35AE1E03BDDE00F8021F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				127A22ED1DF146D90002EF34 /* HelloViewController.swift */,
 				1288ECDA1DF944AF00149DCE /* ProfileViewController.swift */,
 				121419B21E026D8C00633151 /* ModalViewController.swift */,
 				121419B41E027A7900633151 /* ContactsTableViewController.swift */,
-				121419B81E0288CC00633151 /* ContactsTableViewCell.swift */,
 				121419BA1E028FC600633151 /* LoginViewController.swift */,
-				121419BC1E0299E700633151 /* Tweet.swift */,
+				128E35AA1E03BC8B00F8021F /* ContactDetailsViewController.swift */,
 			);
-			path = "iOS-2";
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		128E35AF1E03BE0200F8021F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				121419BC1E0299E700633151 /* Tweet.swift */,
+				128E35AC1E03BD5900F8021F /* User.swift */,
+				128E35B01E03BE2900F8021F /* DataProvider.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +139,7 @@
 				TargetAttributes = {
 					127A22D71DF142980002EF34 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HEZ4SXCB33;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -156,11 +182,14 @@
 			files = (
 				121419BB1E028FC600633151 /* LoginViewController.swift in Sources */,
 				121419B31E026D8C00633151 /* ModalViewController.swift in Sources */,
+				128E35AB1E03BC8B00F8021F /* ContactDetailsViewController.swift in Sources */,
 				1288ECDB1DF944AF00149DCE /* ProfileViewController.swift in Sources */,
 				121419B91E0288CC00633151 /* ContactsTableViewCell.swift in Sources */,
+				128E35B11E03BE2900F8021F /* DataProvider.swift in Sources */,
 				121419B51E027A7900633151 /* ContactsTableViewController.swift in Sources */,
 				127A22DC1DF142980002EF34 /* AppDelegate.swift in Sources */,
 				127A22EE1DF146D90002EF34 /* HelloViewController.swift in Sources */,
+				128E35AD1E03BD5900F8021F /* User.swift in Sources */,
 				121419BD1E0299E700633151 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HEZ4SXCB33;
 				INFOPLIST_FILE = "iOS-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.jahesh.iOS-2";
@@ -296,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HEZ4SXCB33;
 				INFOPLIST_FILE = "iOS-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.jahesh.iOS-2";
